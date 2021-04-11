@@ -1,0 +1,13 @@
+// logical operator
+// let myBool = false;
+// let anotherBool = false;
+// let thirdBool = false;
+// if (myBool && thirdBool) {
+//   console.log('myBool and thirdBool were both true');
+// } else if (myBool || anotherBool) {
+//   console.log('My bool or anotherBool was true!');
+// } else if (thirdBool) {
+//   console.log('myBool and anotherBool were false, but thirdBool was true.')
+// } else {
+//   console.log('Were any of my variables true, cuh?');
+// }

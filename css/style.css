@@ -1,0 +1,19 @@
+body {background-color: aquamarine;}
+
+
+nav {
+    color: black;
+    background-color: wheat;
+    display: block;
+    font-size: 30px;
+
+}
+
+li {
+    font-style: italic;
+    display: inline;
+
+}
+
+
+    display: inline-block;
