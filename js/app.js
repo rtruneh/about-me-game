@@ -1,81 +1,71 @@
 'use strict'
-// If conditional based confirm command
-//ask user for their name
-//let user enter text
-//if no text is entered go back to prompt
-
-// let user = prompt('What\'s your name?')
-let user = prompt('what is your name?');
-
-
-if (prompt.value == "") {
-  alert('Seriously, I need your name.')
-  } else {
-  alert('Hi ' + user + ' are you ready to try you\'re luck?');
-}
-
-let answer1 = confirm('Hi ' + user + ' are you ready to try you\'re luck?')
-if (answer1 === true) {
-  alert('LET\'S PLAY!')
+//asking user if they want to play
+let answer1 = confirm('Would you like to play a game?')
+if (!answer1) {
+  alert('sorry to see you go');
 } else {
-  alert('Sorry to see you go!')
+  alert('come on in!');
 }
 
-//ask user a question
-let question1 = prompt('Does the author have a child?', "Type yes or no")
-  if (question1 === 'yes'.toUpperCase) {
-    alert('That is correct')
-  } else {
-    alert('wrong, try again')
-  }
+//once user says ok, ask for name then enter the page
+let user = prompt('what is your name?');
+while (!user) {
+  alert ('Seriously, I need your name.');
+  user = prompt('What is your name?');
+} 
+if (user.length > 0) {
+confirm('Hi ' + user + ' let\'s play!');
+}
 
-let userPoints = 0;
-let userAnswer = '';
-let limit = 3;
-let numGuesses = 0;
+//quiz
+function myQuiz() {
+  let question1 = prompt('Does the author have a child?', 'enter yes or no');
+ 
 
-// while (userAnswer !== 'yes' && numGuesses < limit){
-//     userAnswer= prompt('is popcorn you\'re fav food');
-//     numGuesses++
-// }
+  let question2 = prompt('Did the author work at the airport?', 'enter yes or no');
+  while (question2 === 'no') {
+    alert ('try again');
+    question2 = prompt('Did the author work at the airport?', 'enter yes or no');
+  } 
 
-// alert('you have ' + userPoints + ' points')
+  let question3 = prompt('Did the author attend TSU?', 'enter yes or no');
+  while (question3 === 'yes') {
+    alert ('try again');
+    question3 = prompt('Did the author work at the airport?', 'enter yes or no');
+  } 
+  
 
-// // convert the variable question1 to lower case to evaluate it
-// // switch (question1.toLowerCase()) {
-// //   case 'yes': 
-// //   break;
-// //   case 'YES':
+  let question4 = prompt('Is the author a man?');
+
+  let question5 = prompt('Is the author a home owner?');
+
+}
+
+while (!user) {
+  alert ('Seriously, I need your name.');
+  user = prompt('What is your name?');
+
+
+// convert the variable question1 to lower case to evaluate it
+// switch (question1.toLowerCase()) {
+//   case 'yes': 
+//   break;
+//   case 'YES':
 
  
-// // //break statement follows each case to 'break' the loop not needed if return is present
-// //   break;
-// //   case 'blue':
-// //   alert('your favorite color was blue!');
-// //   break;
-// // // default statement is what is fired in there event none of the cases occur
-// //   default:
-// //   alert('I don\'t know what your favorite color was ¯\\_(ツ)_/¯');
-// // }
-
-// //! in front of the word is false
-// // the below will run until user enters information
-
-// while(!user) {
-//     user = prompt('what is your name? Really, we need it')
+// //break statement follows each case to 'break' the loop not needed if return is present
+//   break;
+//   case 'blue':
+//   alert('your favorite color was blue!');
+//   break;
+// // default statement is what is fired in there event none of the cases occur
+//   default:
+//   alert('I don\'t know what your favorite color was ¯\\_(ツ)_/¯');
 // }
 
+//! in front of the word is false
+// the below will run until user enters information
 
-// if (user !== 'steve') {
-//     alert('too bad you\'re not a steve')
-// }
+//display points and give points to user
 
-// alert('hi ' + user + ' i am so glad you decided to join')
-
-// let answer = prompt('is your fav food popcorn? Type yes or no'). toLocaleUpperCase
-
-// //display points and give points to user
-
-// // alert('you have ' + userPoints + ' points');
-
-// //another way to give user their points
+// alert('you have ' + userPoints + ' points')
