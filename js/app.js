@@ -44,7 +44,7 @@ function myQuiz() {
 while (!user) {
   alert ('Seriously, I need your name.');
   user = prompt('What is your name?');
-
+}
 
 // convert the variable question1 to lower case to evaluate it
 // switch (question1.toLowerCase()) {
