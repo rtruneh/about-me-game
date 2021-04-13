@@ -20,7 +20,7 @@ confirm('Hi ' + user + ' let\'s play!');
 //quiz
 function myQuiz() {
   let question1 = prompt('Does the author have a child?', 'enter yes or no');
- 
+ if (question1 === 'yes'.toUpperCase)
 
   let question2 = prompt('Did the author work at the airport?', 'enter yes or no');
   while (question2 === 'no') {
@@ -35,9 +35,9 @@ function myQuiz() {
   } 
   
 
-  let question4 = prompt('Is the author a man?');
+  let question4 = prompt('Is the author a man?', 'enter yes or no');
 
-  let question5 = prompt('Is the author a home owner?');
+  let question5 = prompt('Is the author a home owner?', 'enter yes or no');
 
 }
 
