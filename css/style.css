@@ -9,11 +9,10 @@ nav {
 
 }
 
-li {
-    font-style: italic;
-    display: inline;
-
+ol {
+    display:block
 }
 
-
-    display: inline-block;
+li {
+    font-style: italic;
+}
