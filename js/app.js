@@ -17,27 +17,25 @@ if (user.length > 0) {
 confirm('Hi ' + user + ' let\'s play!');
 }
 
-//quiz
+//game
 let points = 0
 function myQuiz() {
   let question1 = prompt('Does the author have a child?', 'enter yes or no');
     if (question1.toLowerCase() === 'yes') {
   alert('That is correct');
   points++;
-  alert('Total points: ' + points)
+  alert('Total points: ' + points);
  } else {
    alert('Incorrect');
-   points--;
    alert('Total points: ' + points);
  }
  let question2 = prompt('Did the author work at the airport?', 'enter yes or no');
     if (question2.toLowerCase() === 'yes') {
   alert('That is correct');
   points++;
-  alert('Total points: ' + points)
+  alert('Total points: ' + points);
  } else {
    alert('Incorrect');
-   points--;
    alert('Total points: ' + points);
  }
  let question3 = prompt('Did the author attend TSU?', 'enter yes or no');
@@ -47,7 +45,6 @@ function myQuiz() {
   alert('Total points: ' + points)
  } else {
    alert('Incorrect');
-   points--;
    alert('Total points: ' + points);
  }
  let question4 = prompt('Is the author a man?', 'enter yes or no');
@@ -57,7 +54,6 @@ function myQuiz() {
   alert('Total points: ' + points)
 } else {
     alert('Incorrect');
-    points--;
     alert('Total points: ' + points);
 }
 let question5 = prompt('Is the author a home owner?', 'enter yes or no');
@@ -67,13 +63,30 @@ let question5 = prompt('Is the author a home owner?', 'enter yes or no');
   alert('Total points: ' + points)
 } else {
     alert('Incorrect');
-    points--;
     alert('Total points: ' + points);
 }
 
+let i = 0;
+const answer = 10;
+let guess = prompt ('How many years did the author work at the airport?', 'enter number');
+
+while (i < 4 && guess !== answer){
+  if(guess < answer){
+    alert('Not quite...try again');
+    guess = prompt('How many years did the author work at the airport?', 'enter number');
+  }
+  else if (!guess){
+    alert('please enter number');
+  }
+  else if (guess > answer){
+    alert('Not that long...try again');
+    guess = prompt('How many years did the author work at the airport?', 'enter number');
+  }
+  else if (guess === answer) {
+    alert('That is correct!!')
+    points++;
+  }
 }
 
-
-
-
+}
 
