@@ -87,4 +87,22 @@ while (i < 4 && question6 !== answer) {
   i++;
 }
 alert(`The answer is ${answer}`);
+
+let array = ['Coffee', 'Tea', 'Lemonade', 'Water']
+let rightAnswer = 'Coffee';
+let question7 = prompt ('What do you think is the authors favorite drink?', 'Coffee? Tea? Lemonade? Water?');
+while (i < 6 && question7 !== rightAnswer) { 
+  if (question7 !== rightAnswer) {
+  alert(`Try again ${5 - i} attempts left`);
+  question7 = prompt('How many years did the author work at the airport?', 'enter number');
+    }
+  else(question7 === rightAnswer) {
+    alert(`Too high ${5 - i} attempts left`);
+    question7 = prompt('How many years did the author work at the airport?', 'enter number');
+    }
+  i++;
+}
+alert(`The answer is ${rightAnswer}`);
+
+
 }
